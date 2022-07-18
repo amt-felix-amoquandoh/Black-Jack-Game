@@ -1,4 +1,4 @@
-let firstCard = 8;
+let firstCard = 12;
 let secondCard = 9;
 let sum = firstCard + secondCard;
 
@@ -11,13 +11,13 @@ let message = document.getElementById("gameAlert");
 
 function startGame (){
   if (sum <= 20){
-    gameMessage = "Try again?"
+    gameMessage = "Try again? 🤔"
 } else if (sum === 21){
    hasBlackjack = true;
-   gameMessage = "wohoo you got blackjack!!!!"
+   gameMessage = "You got blackjack!!!! 💪"
 } else {
    isGameOn = false
-   gameMessage = "Game Over!"
+   gameMessage = "Game Over! 😏"
 };
   gameAlert.textContent = gameMessage;
 }
