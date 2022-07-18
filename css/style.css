@@ -29,6 +29,7 @@ body {
 .gameIntro{
   color: gold;
   font-size: 1.8rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .gameIntro > span{

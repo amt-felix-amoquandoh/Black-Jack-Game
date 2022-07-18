@@ -4,14 +4,21 @@ let sum = firstCard + secondCard;
 
 let hasBlackjack = false;
 let isGameOn = true;
-let gameAlert = ""
+let gameMessage = ""
 
-if (sum <= 20){
-    gameAlert = "Try again?"
+let message = document.getElementById("gameAlert");
+
+
+function startGame (){
+  if (sum <= 20){
+    gameMessage = "Try again?"
 } else if (sum === 21){
    hasBlackjack = true;
-   gameAlert = "wohoo you got blackjack!!!!"
+   gameMessage = "wohoo you got blackjack!!!!"
 } else {
    isGameOn = false
-   gameAlert = "Game Over!"
+   gameMessage = "Game Over!"
 };
+  gameAlert.textContent = gameMessage;
+}
+
