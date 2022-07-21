@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="" />
-  <title>Document</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
+  <body>
+    <div class="container">
+      <p class="gameIntro">
+        <span>&#127183;</span> Blackjack <span>&#127183;</span>
+      </p>
+      <p class="gameAlert" id="gameAlert"><i></i></p>
+      <p class="textWhite" id="numOfCards">Cards:</p>
+      <p class="textWhite" id="sumOfCards">Sum:</p>
+      <button type="button" class="btn" id="startBtn" onclick="startGame()">
+        Start game
+      </button>
+      <button type="button" class="btn" id="newBtn" onclick="newGame()">
+        New card
+      </button>
 
-<body>
-  <div class="container">
-    <p class="gameIntro"><span>&#127183;</span> Blackjack <span>&#127183;</span></p>
-    <p class="gameAlert" id="gameAlert"><i></i></p>
-    <p class="textWhite" id="numOfCards">Cards: </p>
-    <p class="textWhite" id="sumOfCards">Sum: </p>
-    <button type="button" class="btn" id="startBtn" onclick="startGame()">Start game</button>
-    <button type="button" class="btn" id="newBtn" onclick="newGame()">New card</button>
+      <p id="playerScore" class="textWhite"></p>
+    </div>
 
-    <p class="textWhite">Name: score</p>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-  </div>
-  
-
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
-  <!-- MDB -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
-  <script type="text/javascript" src="./js/sript.js"></script>
-</body>
-
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/sript.js"></script>
+  </body>
 </html>

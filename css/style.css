@@ -52,6 +52,7 @@ body {
 #newBtn{
   background: gold;
   font-size: large;
+  margin-bottom: 20px;
 } 
 
 .gameAlert{
@@ -62,4 +63,8 @@ body {
 
 .textWhite{
   font-size: large;
+}
+
+#numOfCards{
+  font-weight: bolder;
 }
